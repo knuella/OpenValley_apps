@@ -189,9 +189,7 @@ class OutputDP:
     def write_outside_value(self):    
         """ Sets "state" to "Hardware Error", if value can't be written.
         """
-        print("actual_value = " + str(self._actual_value.get_value()))
-        self._state = "good"
-        #raise NotImplementedError() 
+        raise NotImplementedError() 
 
 
 
