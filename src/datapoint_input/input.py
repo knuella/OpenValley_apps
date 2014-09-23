@@ -1,13 +1,13 @@
 import sys
 import time
 
-sys.path.append("../../base/src")
+sys.path.append("../../base/src/python2")
 from rpisps.context import Context as RpispsContext
 from rpisps.constants import *
 from rpisps.message import MessageDecoder, MessageEncoder
 from rpisps.exceptions import *
 
-from exclusive_writebal import *
+from rpisps.exclusive_writebal import *
 
 
 class InputDP:
@@ -132,9 +132,9 @@ class InputDP:
     def read_outside_value(self):    
         """ Sets "state" to "Hardware Error", if value can't be read.
         """
-        self._state = "good"
-        self._actual_value = 5
-        #raise NotImplementedError() 
+        #self._state = "good"
+        #self._actual_value = 5
+        raise NotImplementedError() 
 
 
 

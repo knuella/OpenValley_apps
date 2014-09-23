@@ -1,12 +1,11 @@
 import sys
 
-sys.path.append("../../base/src")
+sys.path.append("../../base/src/python2")
 from rpisps.context import Context as RpispsContext
 from rpisps.constants import *
 from rpisps.message import MessageDecoder, MessageEncoder
 from rpisps.exceptions import *
-
-from exclusive_writebal import *
+from rpisps.exclusive_writebal import *
 
 
 class OutputDP:
@@ -121,7 +120,7 @@ class OutputDP:
             elif "read_state" == operation:
                 return self._state
             elif "read_all" == operation:
-                return self._return_all()
+                return self.return_all()
             else:
                 message = "unsupportet operation"
                 raise MessageFormatError(message)
