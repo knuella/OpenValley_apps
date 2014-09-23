@@ -24,7 +24,7 @@ class LinearScaler:
     def get_y(self, x):
         """ Returns the y-Value by given x-Value. """
         return self._m*x + self._n
-    
+     
     def get_x(self, y):
         """ Returns the x-Value by given y-Value. """
         return (y-self._n) / self._m

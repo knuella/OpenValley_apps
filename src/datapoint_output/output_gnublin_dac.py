@@ -1,7 +1,7 @@
 import gnublin
 
 from output import *
-from scaler_linear import *
+from scaler.scaler import *
 
 class OutputDPGnublinDAC(OutputDP):
 
@@ -20,11 +20,11 @@ class OutputDPGnublinDAC(OutputDP):
                                scaling_type)(**scaling_data)
 
     def write_outside_value(self):    
-        computal_value = self.scaler.get_y(_actual_value.get_value())
+        computal_value = self.scaler.get_y(self._actual_value.get_value())
         
         self.modul.write(self.clamp_address, (int)(computal_value))
         
-        readed_computal_value = self._modul.read(self.clamp_address)
+        readed_computal_value = self.modul.read(self.clamp_address)
         if computal_value == readed_computal_value:
             self._state = 'good'
         else:
@@ -33,7 +33,7 @@ class OutputDPGnublinDAC(OutputDP):
 
 def main():
     dp = OutputDPGnublinDAC(0, 1, 
-                            'linearScaler', {'y1':0,'x1':2900,'y2':0,'x2':10,})
+                            'LinearScaler', {'y1':0,'x1':0,'y2':2900,'x2':10,})
     while True:
         dp.run()
 
