@@ -17,6 +17,7 @@ class InputDPGPIOdigital(InputDP):
             self._state = 'good'
         except:
             self._state = 'bad'
+            self._actual_value = 0
 
 
 def main():
