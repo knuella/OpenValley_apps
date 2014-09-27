@@ -1,7 +1,7 @@
 import sys
 import time
 
-sys.path.append("../../base/src/python2")
+sys.path.append("../../base/src")
 from rpisps.context import Context as RpispsContext
 from rpisps.constants import *
 from rpisps.message import MessageDecoder, MessageEncoder
