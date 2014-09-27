@@ -23,7 +23,6 @@ class InputDPGPIOdigital(InputDP):
             self._actual_value = 0
 
 
-
 def main():
     dp = InputDPGPIOdigital(13)
                             
