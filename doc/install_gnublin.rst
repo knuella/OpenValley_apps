@@ -1,23 +1,10 @@
 Installation der gnublin-api
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Die Installation ist `hier <http://en.gnublin.org/index.php/API>`_, bzw. hinter
-den dort aufgeführten Links der verschiedenen Boards (Gnublin, Raspberry Pi und
-BeagleBone Black) relativ gut beschrieben und klappte fast ohne Probleme. Im
-`Tutorial API BeagleBoneBlack
-<http://en.gnublin.org/index.php/Tutorial_API_BeagleBoneBlack>`_ fehlt die
-Anweisung 
+Die Installation ist `hier http://en.gnublin.org/index.php/API_Python`_ 
+(unter "With Raspberry Pi") relativ gut beschrieben und klappte ohne Probleme. 
 
-.. code:: bash
-
-  cd gnublin-api
-
-vor dem ersten "make". Später kann dieser Schritt dann wegfallen.
-
-Hat man die C++ API installierert stehen zusätzlich einige Komandozeilen
-Befehle zu Verfügung um die Gnublin-Module anzusteuern.
-
-Für die Installation der Python API muss der Pfad zu den Gnublin-Modulen nach
+Für die Installation der Python API muss der Pfad zu den Gnublin-Modulen noch
 an den Python Interpreter mitgeteielt werden. 
 
 .. code:: bash
