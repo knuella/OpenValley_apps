@@ -1,5 +1,5 @@
-Installation
-~~~~~~~~~~~~
+Installation der gnublin-api
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Die Installation ist `hier <http://en.gnublin.org/index.php/API>;`_, bzw. hinter den dort aufgeführten Links der verschiedenen Boards (Gnublin, Raspberry Pi und BeagleBone Black) relativ gut beschrieben und klappte fast ohne Probleme. Im `Tutorial API BeagleBoneBlack <http://en.gnublin.org/index.php/Tutorial_API_BeagleBoneBlack>;`_ fehlt die Anweisung 
 
