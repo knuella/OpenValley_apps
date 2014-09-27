@@ -8,12 +8,12 @@ class InputDPGPIOdigital(InputDP):
         InputDP.__init__(self)
         
         gpio.setmode(gpio.BOARD)
-        GPIO.setwarnings(False)
-        GPIO.setup(channel, GPIO.IN)
+        gpio.setwarnings(False)
+        gpio.setup(channel, gpio.IN)
 
     def read_outside_value(self):    
         try:
-            GPIO.input(channel)
+            self._actual_value = gpio.input(channel)
             self._state = 'good'
         except:
             self._state = 'bad'
