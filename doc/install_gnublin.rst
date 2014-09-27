@@ -1,8 +1,8 @@
 Installation der gnublin-api
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Die Installation ist `hier (unter "With Raspberry Pi") 
-<http://en.gnublin.org/index.php/API_Python>`_ relativ gut beschrieben und klappte ohne Probleme. 
+Die Installation ist `hier <http://en.gnublin.org/index.php/API_Python#With_RaspberryPi>`_ 
+relativ gut beschrieben und klappte ohne Probleme. 
 
 Für die Installation der Python API muss der Pfad zu den Gnublin-Modulen noch
 an den Python Interpreter mitgeteielt werden. 
