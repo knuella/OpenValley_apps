@@ -1,0 +1,13 @@
+{
+	"type" : "fielddevice",
+	"name" : "test_basic_fielddevice_digital_output",
+	"label" : "[T] Basic digital output",
+	"template": [
+		{
+			"type" : "string",
+			"name" : "Clamp-Address",
+			"label" : "Klemmen-Adresse",
+			"writable" : false
+		}
+	]
+}
