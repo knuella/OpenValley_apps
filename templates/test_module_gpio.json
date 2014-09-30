@@ -1,0 +1,30 @@
+{
+	"type" : "module",
+	"name" : "test_module_gpio",
+	"label" : "GPIOs",
+	"description" : "",
+	"template" : [
+		{
+			"type" : "string",
+			"name" : "Module_Type",
+			"label" : "Typ",
+			"value" : "connector_gpio",
+			"writable" : false
+		},
+		{
+			"type" : "string",
+			"name" : "Module_Connection",
+			"label" : "Verbindung",
+			"value" : "gpio",
+			"writable" : false
+		},
+		{
+			"type" : "integer",
+			"name" : "Module_Clamp-Adresses",
+			"label" : "Klemmen-Adresse",
+			"value" : [7,11,12,13],
+			"multiple" : true,
+			"writable" : false
+		}
+	]
+}
